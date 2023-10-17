@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>StarBucksX Profile Page</title>
+</head>
+<body class="{{ user.bg_color }}">
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="bg-white p-12 rounded shadow-md">
+            <h1 class="text-2xl font-semibold mb-4">Profile</h1>
+            <div>
+                <p><strong>Society Name:</strong> {{ user.society_name }}</p>
+                <p><strong>Name:</strong> {{ user.user_name }}</p>
+                <p><strong>Outsider Level:</strong> {{ user.percentage }} %</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
