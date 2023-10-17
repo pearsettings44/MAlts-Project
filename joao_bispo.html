@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>StarBucksX Profile Page</title>
+  </head>
+  <body class="bg-red-600" onload="addEvent()">
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="bg-white p-12 rounded shadow-md">
+        <h1 class="text-2xl font-semibold mb-4">Profile</h1>
+        <div>
+          <p><strong>Society Name:</strong> João Bispo</p>
+          <p><strong>Name:</strong> Religião</p>
+          <p><strong>Outsider Level:</strong> 93 %</p>
+        </div>
+      </div>
+    </div>
+     <audio id="audio" src="./audio/danger.mp4"></audio>
+
+    <script>
+      function addEvent() {
+        document.body.addEventListener("click", play);
+      }
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
