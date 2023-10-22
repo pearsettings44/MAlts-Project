@@ -13,13 +13,20 @@
         <div>
           <p><strong>Name:</strong> Carolina Araújo</p>
           <p><strong>Society Name:</strong> Ambientalistas</p>
-          <p><strong>Outsider Level:</strong> 17 %</p>
+          <p><strong>Outsider Level:</strong> 17%</p>
         </div>
       </div>
     </div>
-    <audio controls autoplay>
-        <source src="./audio/check.mp4" type="audio/mp4">
-        Your browser does not support the audio element.
-    </audio>
+    <audio id="audio" src="./audio/danger.mp4"></audio>
+
+    <script>
+      function addEvent() {
+        document.body.addEventListener("click", play);
+      }
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
   </body>
 </html>
